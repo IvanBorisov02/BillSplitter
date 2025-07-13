@@ -1,12 +1,31 @@
-# React + Vite
+# React Tip Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Този проект е **BillSplitter**, изграден с React и Redux, стилизиран с Tailwind CSS.
 
-Currently, two official plugins are available:
+- **React функционални компоненти** и хукове (`useSelector`, `useDispatch`)
+- **Redux** за глобално състояние (`bill`, `tip`, `numOfPeople` и `error`)
+- **Tailwind CSS** с inline HSL цветове
+- **Компонентна архитектура**: разделяне на UI компоненти (`Input`, `Tip`, `Logo`) и feature-компоненти (`BillSplitter`, `TipContainer`, `ResultBill`)
+- **Достъпност (a11y)**: свързване на `label` с `input` през `htmlFor`/`id`, използване на `<button>` за интерактивни елементи
+- **Responsive дизайн** с Tailwind Utility класове и Grid/Flex Layout
+- **Валидация и грешки**: показване на съобщения за грешка директно под полето и червено оцветяване на рамката при невалидни стойности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Функционалности
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Въвеждане на сума (`Bill`) и брой хора
+- Избор на процент бакшиш от предварително зададени опции или собствено въведен процент
+- Изчисляване на **бакшиш на човек** и **обща сума на човек**
+- Reset бутон за нулиране на всички стойности
+
+---
+
+## Технологии
+
+- **React** (v18+)
+- **Redux Toolkit** 
+- **Tailwind CSS**
+
+---
+
