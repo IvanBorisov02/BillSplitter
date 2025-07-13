@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { reset } from "../../features/bill/billSlice";
+import { reset } from "./billSlice";
 
 function ResultBill() {
   const { bill, tip, numOfPeople } = useSelector((store) => store.bill);
